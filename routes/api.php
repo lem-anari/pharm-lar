@@ -71,3 +71,9 @@ Route::group([
 ], function () {    
     Route::post('auditsOfEmployee', 'AuditsController@get_ApiAuditUser');
 });
+
+Route::group([
+    'prefix' => 'salaryEmployee'
+], function () {    
+    Route::post('salaryFinesOfEmployee', 'SalariesController@get_ApiSalaryFines');
+});
